@@ -1,5 +1,6 @@
 package com.example.aplicacionkotlin
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -27,6 +28,11 @@ class MainActivity : AppCompatActivity() {
             if(nombre.isNotEmpty()){
                 campoText.text = "Bienvenido, $nombre"
             }
+
+            val intent = Intent(this, SegundaActivity::class.java)
+            intent.putExtra("NOMBRE_USUARIO", nombre)
+            startActivity(intent)
+
         }
 
         botonCancelar.setOnClickListener {
