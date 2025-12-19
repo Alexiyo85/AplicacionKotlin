@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivityJava"
+    android:background="@drawable/logo_usuario">
 
     <TextView
         android:id="@+id/tituloText"
@@ -35,7 +36,8 @@
         android:layout_marginBottom="24dp"
         android:text="Aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:tooltipText="@string/tooltip_aceptar"/>
 
     <Button
         android:id="@+id/botonCancelar"
@@ -45,7 +47,8 @@
         android:layout_marginBottom="24dp"
         android:text="Cancelar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:tooltipText="@string/tooltip_cancelar"/>
 
     <EditText
         android:id="@+id/usuarioText"
@@ -58,4 +61,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/campoText" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

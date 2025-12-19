@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Registro de Usuario</string>
     <string name="hint_usuario">Introduce usuario</string>
+    <string name="tooltip_aceptar">Pulsa para aceptar</string>
+    <string name="tooltip_cancelar">Pulsa para cancelar</string>
 </resources>
